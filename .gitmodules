@@ -1,0 +1,12 @@
+[submodule "mysql"]
+	path = mysql
+	url = https://github.com/nelson9503-pymodules/mysql.git
+[submodule "TerminalReporter"]
+	path = TerminalReporter
+	url = https://github.com/nelson9503-pymodules/TerminalReporter.git
+[submodule "timestamp"]
+	path = timestamp
+	url = https://github.com/nelson9503-pymodules/timestamp.git
+[submodule "yfapi"]
+	path = yfapi
+	url = https://github.com/nelson9503-InvestmentSystem/yfapi.git
