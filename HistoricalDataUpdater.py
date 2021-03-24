@@ -51,7 +51,7 @@ class Updater:
             priceTB = self.historicalPriceDB.TB(tbName)
             dates = list(priceTB.query().keys())
             if len(dates) == 0:
-                lastdate = 0
+                lastdate = -14831769600000
             else:
                 lastdate = max(dates)
             price = self.__clean_historical_data(price, lastdate)
@@ -63,7 +63,7 @@ class Updater:
             dividendTB = self.dividendDB.TB(tbName)
             dates = list(dividendTB.query().keys())
             if len(dates) == 0:
-                lastdate = 0
+                lastdate = -14831769600000
             else:
                 lastdate = max(dates)
             dividend = self.__clean_historical_data(dividend, lastdate)
@@ -75,7 +75,7 @@ class Updater:
             stocksplitTB = self.stocksplitDB.TB(tbName)
             dates = list(stocksplitTB.query().keys())
             if len(dates) == 0:
-                lastdate = 0
+                lastdate = -14831769600000
             else:
                 lastdate = max(dates)
             stocksplit = self.__clean_historical_data(stocksplit, lastdate)
